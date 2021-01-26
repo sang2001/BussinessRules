@@ -49,14 +49,18 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OrderProcessingService\BookServiceTest.cs" />
+    <Compile Include="OrderProcessingService\MembershipServiceTest.cs" />
+    <Compile Include="OrderProcessingService\PhysicalProductOrBookServiceTest.cs" />
+    <Compile Include="OrderProcessingService\PhysicalProductServiceTest.cs" />
+    <Compile Include="OrderProcessingService\UpgradeMembershipServiceTest.cs" />
+    <Compile Include="OrderProcessingService\VideoServiceTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="OrderProcessingService\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
